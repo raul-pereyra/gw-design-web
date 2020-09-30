@@ -1,0 +1,9 @@
+@mixin div-color($back-color,$font-color){
+    background-color: $back-color;
+    color: $font-color;}
+
+@mixin flex-position($display, $direction, $justco, $alit){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justco;
+    align-items: $alit;}

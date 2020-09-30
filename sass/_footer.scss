@@ -1,0 +1,153 @@
+#footer{
+    padding: 2.5rem 20vw 4rem 20vw;
+    background: black;
+
+    .bigfooter{
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        min-width: 400px;
+
+        .footer-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 50%;
+
+            h3{
+                font-family: neutralight;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                letter-spacing: 0.5rem;
+                color: white;
+                padding-top: 0.5rem;
+            }
+        }
+        .foot-newsletter{
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+
+            h4{
+                font-family: neutramed;
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: white;
+                letter-spacing: 0.03rem;}
+
+            .form-newsletter{
+                margin-top: 0.5rem;
+                
+                .borderline{
+                    width: 62%;
+                    border-width: 0rem 0 3px 0;
+                    border-color: #e0ff00;
+                    box-sizing: border-box;
+                    font-family: neutramed;
+                    font-size: 1rem;
+                    background: transparent;
+                    color: white;}
+
+                .register-newsletter{
+                    font-size: 1rem;
+                    background-color: #e0ff00;
+                    font-family: neutrabold;
+                    margin-left: 1rem;
+                    padding:0.25rem 1.25rem 0.25rem 1.25rem;
+                    cursor: pointer;
+                    border: 0;
+                    border-radius: 1rem;
+                }
+            }
+        }
+        .footer-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 50%;
+
+            .foot-menu{
+                li{
+                    list-style: none;
+                    margin: 0.85rem 0;
+                    font-family: neutralight;
+                    font-size: 0.9rem;
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover{
+                            font-family: neutramed;
+                            font-size: 0.95rem;
+                            letter-spacing: 0.025rem;
+                            color: #e0ff00;}
+                    }
+                }
+            }
+            .footer-redes{
+                h2{
+                    font-family: neutramed;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    color: white;
+                    letter-spacing: 0.025rem;
+                    margin-top: 2.5rem;
+                    margin-bottom: 1.5rem;}
+                .logo-redfoot{
+                    display: flex;
+
+                    li{
+                        list-style: none;
+                        width: 100%;
+                        justify-content: space-around;
+                        margin-bottom: 0.5rem;
+
+                        .circle{
+                            fill: white;
+
+                            &:hover{
+                                fill: #e0ff00;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .foot-end{
+        display: flex;
+        flex-direction: column;
+        
+        .foot-terms{
+            display: flex;
+            justify-content: center;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-family: neutramed;
+
+            a{
+                margin-left: 1.25rem;
+                margin-right: 1.25rem;
+                text-decoration: none;
+                color:white;
+                font-size: 0.9rem;
+
+                &:hover{
+                    color: #e0ff00;}
+            }
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: neutralight;
+            color: white;
+            font-size: 0.8rem;
+
+            span{
+                font-size: 1.5rem;
+                margin-bottom: 0.22rem;
+                padding-right: 0.3rem;
+            }
+        }
+    }   
+}

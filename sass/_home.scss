@@ -1,0 +1,187 @@
+.line-mid{
+    position: fixed;
+    width: 1px;
+    opacity: .3;
+    height: 100vh;
+    background-color:$color-principal;
+    left: 50%;
+    top: 0;
+    z-index: 1;}
+.design{
+    background: url(../images/great-fondo.gif);
+    background-size: cover;
+    background-position: center center;
+    @include flex-position(flex,column,center,center);
+    padding-bottom: 20vh;
+    height: 100vh;    
+    z-index: -1;
+    
+    h1{
+        z-index: 1;
+        margin-top: 18vh;
+        font-size: 23vh;
+        font-family: $fuente-titulo;
+        color: $color-principal;}
+    .line-design{
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        width: 33%;
+        margin-top: -1rem;
+        margin-left: 32%;
+
+        .linegros{
+            width: 30px;
+            background: $color-secundario;}
+        .descri{
+            margin-left: -1.2rem;
+            font-size: 5vh;
+            font-family: $fuente-media;
+            padding: 1.2rem 1.5rem 1.2rem 0.5rem;
+            letter-spacing: -0.1rem;
+            color:$color-principal;}
+    }
+    .go-hi{
+    margin-top:2rem;
+
+        &:hover{
+            background:$color-terciario;
+            border-radius: 2rem;
+        }
+    }
+}
+#hi-we{
+    background: $color-principal;
+    min-height: 100vh;
+    margin: -15.9% 15vw 0 15vw;    
+
+    .line-mid-white{
+        position: absolute;
+        margin-top: 90vh;
+        width: 0.6px;
+        height: 100vh;
+        background-color: $color-terciario;
+        left: 50%;
+        top: 0;}
+    .int-hi-we{
+        height: 100vh;
+        @include flex-position(flex,column,flex-end,center);        
+
+        .hi-descri{
+            position: relative;
+            top: 10vh;
+
+            h2{
+                padding-top: 15%;
+                font-family: $fuente-parrafo;
+                font-size: 13vh;
+                margin-left: 15%;
+                text-transform: uppercase;
+                color: $color-terciario;}
+            h3{
+                font-family: $fuente-titulo;
+                font-size:13vh;
+                text-transform: uppercase;
+                margin-top: -4vh;
+                margin-left: 15%;
+                color: $color-terciario;}
+            p{
+                font-family:$fuente-parrafo;
+                padding-top: 1.5vh;
+                width: 60%;
+                margin: 0 20%;
+                color: $color-terciario;
+                letter-spacing: 0.08rem;
+                z-index: 1;}
+        }
+        .discover{
+            position: relative;
+            top: 25vh;
+            transition: 1s;
+
+            &:hover{
+                    transform: rotate(360deg);
+            }
+        }
+        .traslate-bloq{
+            background-color: $color-secundario;
+            height: 15vh;
+            width: 34.9%;
+            position: absolute;
+            margin-left: -34.9%;
+            transition: 1s;
+        }
+        .hi-img{
+            position: relative;
+            left: 30%}
+    }
+}
+.dream{
+    @extend %center-column;
+    margin: 30vh 0 20vh 0;
+    z-index: 1;
+    color: $color-principal;
+    
+
+    h2{
+        font-family: $fuente-titulo;
+        font-size: 8vh;}
+
+    .idea{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 7vh;
+        margin-bottom: 15vh;
+
+        li{
+            display: flex;
+            padding:0 2rem;
+
+            h2{
+                font-size: 30vh;
+                font-family: $fuente-media;
+                letter-spacing: 0.4rem;}   
+            
+            h3{
+                background-color:$color-secundario;
+                margin-top: 15vh;
+                margin-left: -2.6vw;
+                font-family: $fuente-titulo;
+                font-size: 3vh;
+            }
+        } 
+    }
+
+    a{
+        font-family: $fuente-titulo;
+        text-transform: uppercase;
+        font-size: 1.8rem; 
+        text-decoration:none;
+        color:$color-principal;
+        background-color: $color-secundario;
+        padding: 0.5rem 2rem;
+        z-index: 1100;}
+}
+.bloque-slider{
+    width:100%;
+    margin-bottom: 7.5%;
+    background: $color-principal;
+    color:$color-terciario;
+    @extend %center-column;
+    
+
+    h3{
+        color: $color-secundario;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+        font-family: $fuente-titulo;
+        font-size: 2rem;
+    }
+
+    p{
+        margin: 0 20% 5% 20%;
+        font-family: $fuente-extra;
+        font-size: 1.3rem;
+        padding-bottom: 5%;
+    }
+}

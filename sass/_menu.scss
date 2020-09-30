@@ -1,0 +1,97 @@
+.sidenav{
+    height: 100vh;
+    width: 0vw;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: $color-secundario;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    .closeboton{
+        position: absolute;
+        right: 1rem;
+        top:3rem;
+        cursor: pointer;}
+
+    .gran-menu{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 5vw 90vw 5vw;
+        grid-template-rows: 100vh;
+    
+        .inicio{
+            @include flex-position(flex,column,flex-end,center);            
+            margin-bottom: 13vh;
+            }
+
+        .lista{
+            @extend %center-row;
+
+            .listeni-menu{
+                @include flex-position(flex,column,space-between,flex-start);                
+                list-style: none;
+
+                .menu-compuesto{
+                    @include flex-position(flex,row,space-between,flex-start);
+                    padding: 2.8vh 0;
+
+                    .number{
+                        font-family: $fuente-extra;
+                        font-size: 3vh;
+                        padding-right: 2vw;}
+
+                    .a-no-se-rompe{
+                        text-decoration: none;
+                        font-family: $fuente-titulo;
+                        font-size: 10vh;
+                        color: $color-principal;
+                        transition: 0.35s;
+                        
+                        &::after{
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: 7px;
+                            background-color: $color-principal;
+                            transition: 0.35s;}
+
+                        &:hover{
+                            font-size: 11vh;
+                        
+                            &::after{
+                                width: 110%;;}
+                        }
+                    }
+                }
+            }
+        }
+        .redes{
+            @extend %center-column;
+            justify-content: flex-end;            
+            list-style: none;            
+            margin-bottom: 12vh;
+            margin-right: 1.5rem;
+
+            li{
+                padding: 2vh 0 0 0;
+            }
+        }
+    }
+}
+.boton-openmenu {
+    position: fixed;
+    right: 0;
+    top: 3rem;
+    cursor: pointer;}
+.boton-openmenu-proy{
+    z-index: 999;}
+.goto-index{
+    background: $color-terciario;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.5rem;
+    left:2rem;
+    padding: 0.5rem;
+    z-index: 900;}

@@ -1,0 +1,546 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.bloque-slider, .dream, .sidenav .gran-menu .redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloqder, .bloqizq, .sidenav .gran-menu .lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: neutrabold;
+  src: url(../font/Neutraface2Text-Bold.otf);
+}
+@font-face {
+  font-family: neutralight;
+  src: url(../font/Neutraface2Text-Light.otf);
+}
+@font-face {
+  font-family: neutrabook;
+  src: url(../font/Neutraface2Text-Book.otf);
+}
+@font-face {
+  font-family: neutramed;
+  src: url(../font/Neutraface2Text-Demi.otf);
+}
+.sidenav {
+  height: 100vh;
+  width: 0vw;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: #e0ff00;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sidenav .closeboton {
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  cursor: pointer;
+}
+.sidenav .gran-menu {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 5vw 90vw 5vw;
+  grid-template-rows: 100vh;
+}
+.sidenav .gran-menu .inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 13vh;
+}
+.sidenav .gran-menu .lista .listeni-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style: none;
+}
+.sidenav .gran-menu .lista .listeni-menu .menu-compuesto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.8vh 0;
+}
+.sidenav .gran-menu .lista .listeni-menu .menu-compuesto .number {
+  font-family: "neutrabook";
+  font-size: 3vh;
+  padding-right: 2vw;
+}
+.sidenav .gran-menu .lista .listeni-menu .menu-compuesto .a-no-se-rompe {
+  text-decoration: none;
+  font-family: "neutrabold";
+  font-size: 10vh;
+  color: black;
+  transition: 0.35s;
+}
+.sidenav .gran-menu .lista .listeni-menu .menu-compuesto .a-no-se-rompe::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 7px;
+  background-color: black;
+  transition: 0.35s;
+}
+.sidenav .gran-menu .lista .listeni-menu .menu-compuesto .a-no-se-rompe:hover {
+  font-size: 11vh;
+}
+.sidenav .gran-menu .lista .listeni-menu .menu-compuesto .a-no-se-rompe:hover::after {
+  width: 110%;
+}
+.sidenav .gran-menu .redes {
+  justify-content: flex-end;
+  list-style: none;
+  margin-bottom: 12vh;
+  margin-right: 1.5rem;
+}
+.sidenav .gran-menu .redes li {
+  padding: 2vh 0 0 0;
+}
+
+.boton-openmenu {
+  position: fixed;
+  right: 0;
+  top: 3rem;
+  cursor: pointer;
+}
+
+.boton-openmenu-proy {
+  z-index: 999;
+}
+
+.goto-index {
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1.5rem;
+  left: 2rem;
+  padding: 0.5rem;
+  z-index: 900;
+}
+
+#footer {
+  padding: 2.5rem 20vw 4rem 20vw;
+  background: black;
+}
+#footer .bigfooter {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+}
+#footer .bigfooter .footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+}
+#footer .bigfooter .footer-left h3 {
+  font-family: neutralight;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  color: white;
+  padding-top: 0.5rem;
+}
+#footer .bigfooter .foot-newsletter {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+#footer .bigfooter .foot-newsletter h4 {
+  font-family: neutramed;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.03rem;
+}
+#footer .bigfooter .foot-newsletter .form-newsletter {
+  margin-top: 0.5rem;
+}
+#footer .bigfooter .foot-newsletter .form-newsletter .borderline {
+  width: 62%;
+  border-width: 0rem 0 3px 0;
+  border-color: #e0ff00;
+  box-sizing: border-box;
+  font-family: neutramed;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+#footer .bigfooter .foot-newsletter .form-newsletter .register-newsletter {
+  font-size: 1rem;
+  background-color: #e0ff00;
+  font-family: neutrabold;
+  margin-left: 1rem;
+  padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 1rem;
+}
+#footer .bigfooter .footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+}
+#footer .bigfooter .footer-right .foot-menu li {
+  list-style: none;
+  margin: 0.85rem 0;
+  font-family: neutralight;
+  font-size: 0.9rem;
+}
+#footer .bigfooter .footer-right .foot-menu li a {
+  text-decoration: none;
+  color: white;
+}
+#footer .bigfooter .footer-right .foot-menu li a:hover {
+  font-family: neutramed;
+  font-size: 0.95rem;
+  letter-spacing: 0.025rem;
+  color: #e0ff00;
+}
+#footer .bigfooter .footer-right .footer-redes h2 {
+  font-family: neutramed;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.025rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+#footer .bigfooter .footer-right .footer-redes .logo-redfoot {
+  display: flex;
+}
+#footer .bigfooter .footer-right .footer-redes .logo-redfoot li {
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+}
+#footer .bigfooter .footer-right .footer-redes .logo-redfoot li .circle {
+  fill: white;
+}
+#footer .bigfooter .footer-right .footer-redes .logo-redfoot li .circle:hover {
+  fill: #e0ff00;
+}
+#footer .foot-end {
+  display: flex;
+  flex-direction: column;
+}
+#footer .foot-end .foot-terms {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-family: neutramed;
+}
+#footer .foot-end .foot-terms a {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+#footer .foot-end .foot-terms a:hover {
+  color: #e0ff00;
+}
+#footer .foot-end .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: neutralight;
+  color: white;
+  font-size: 0.8rem;
+}
+#footer .foot-end .copyright span {
+  font-size: 1.5rem;
+  margin-bottom: 0.22rem;
+  padding-right: 0.3rem;
+}
+
+.line-mid {
+  position: fixed;
+  width: 1px;
+  opacity: 0.3;
+  height: 100vh;
+  background-color: black;
+  left: 50%;
+  top: 0;
+  z-index: 1;
+}
+
+.design {
+  background: url(../images/great-fondo.gif);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20vh;
+  height: 100vh;
+  z-index: -1;
+}
+.design h1 {
+  z-index: 1;
+  margin-top: 18vh;
+  font-size: 23vh;
+  font-family: "neutrabold";
+  color: black;
+}
+.design .line-design {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  margin-top: -1rem;
+  margin-left: 32%;
+}
+.design .line-design .linegros {
+  width: 30px;
+  background: #e0ff00;
+}
+.design .line-design .descri {
+  margin-left: -1.2rem;
+  font-size: 5vh;
+  font-family: "neutramed";
+  padding: 1.2rem 1.5rem 1.2rem 0.5rem;
+  letter-spacing: -0.1rem;
+  color: black;
+}
+.design .go-hi {
+  margin-top: 2rem;
+}
+.design .go-hi:hover {
+  background: white;
+  border-radius: 2rem;
+}
+
+#hi-we {
+  background: black;
+  min-height: 100vh;
+  margin: -15.9% 15vw 0 15vw;
+}
+#hi-we .line-mid-white {
+  position: absolute;
+  margin-top: 90vh;
+  width: 0.6px;
+  height: 100vh;
+  background-color: white;
+  left: 50%;
+  top: 0;
+}
+#hi-we .int-hi-we {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+#hi-we .int-hi-we .hi-descri {
+  position: relative;
+  top: 10vh;
+}
+#hi-we .int-hi-we .hi-descri h2 {
+  padding-top: 15%;
+  font-family: "neutralight";
+  font-size: 13vh;
+  margin-left: 15%;
+  text-transform: uppercase;
+  color: white;
+}
+#hi-we .int-hi-we .hi-descri h3 {
+  font-family: "neutrabold";
+  font-size: 13vh;
+  text-transform: uppercase;
+  margin-top: -4vh;
+  margin-left: 15%;
+  color: white;
+}
+#hi-we .int-hi-we .hi-descri p {
+  font-family: "neutralight";
+  padding-top: 1.5vh;
+  width: 60%;
+  margin: 0 20%;
+  color: white;
+  letter-spacing: 0.08rem;
+  z-index: 1;
+}
+#hi-we .int-hi-we .discover {
+  position: relative;
+  top: 25vh;
+  transition: 1s;
+}
+#hi-we .int-hi-we .discover:hover {
+  transform: rotate(360deg);
+}
+#hi-we .int-hi-we .traslate-bloq {
+  background-color: #e0ff00;
+  height: 15vh;
+  width: 34.9%;
+  position: absolute;
+  margin-left: -34.9%;
+  transition: 1s;
+}
+#hi-we .int-hi-we .hi-img {
+  position: relative;
+  left: 30%;
+}
+
+.dream {
+  margin: 30vh 0 20vh 0;
+  z-index: 1;
+  color: black;
+}
+.dream h2 {
+  font-family: "neutrabold";
+  font-size: 8vh;
+}
+.dream .idea {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 7vh;
+  margin-bottom: 15vh;
+}
+.dream .idea li {
+  display: flex;
+  padding: 0 2rem;
+}
+.dream .idea li h2 {
+  font-size: 30vh;
+  font-family: "neutramed";
+  letter-spacing: 0.4rem;
+}
+.dream .idea li h3 {
+  background-color: #e0ff00;
+  margin-top: 15vh;
+  margin-left: -2.6vw;
+  font-family: "neutrabold";
+  font-size: 3vh;
+}
+.dream a {
+  font-family: "neutrabold";
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  background-color: #e0ff00;
+  padding: 0.5rem 2rem;
+  z-index: 1100;
+}
+
+.bloque-slider {
+  width: 100%;
+  margin-bottom: 7.5%;
+  background: black;
+  color: white;
+}
+.bloque-slider h3 {
+  color: #e0ff00;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  font-family: "neutrabold";
+  font-size: 2rem;
+}
+.bloque-slider p {
+  margin: 0 20% 5% 20%;
+  font-family: "neutrabook";
+  font-size: 1.3rem;
+  padding-bottom: 5%;
+}
+
+.conocenos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 6vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.conocenos h1 {
+  font-family: "neutrabold";
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 35vh;
+}
+.conocenos .office {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.conocenos .office .office1 {
+  position: relative;
+  right: 5rem;
+  bottom: 50%;
+}
+.conocenos .office .office-bloq {
+  background-color: #e0ff00;
+  width: 19%;
+  height: 40%;
+  position: absolute;
+  left: 26vw;
+  bottom: 0;
+}
+.conocenos .office .office2 {
+  position: relative;
+  left: 18rem;
+  bottom: 3rem;
+}
+.conocenos .office .office3 {
+  position: relative;
+  left: 4rem;
+  bottom: 65%;
+}
+
+.bloqder, .bloqizq {
+  height: 80vh;
+  transition: 5s;
+  margin: 10vh 6vw 10vh 6vw;
+}
+.bloqder .descder, .bloqizq .descder {
+  margin-left: 2vw;
+}
+.bloqder #desc h2, .bloqizq #desc h2 {
+  font-family: "neutrabold";
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 10vh;
+  padding-bottom: 3vh;
+}
+.bloqder #desc h3, .bloqizq #desc h3 {
+  background-color: black;
+  color: #e0ff00;
+  font-size: 1.5rem;
+  font-family: "neutramed";
+  padding-bottom: 1vh;
+}
+.bloqder #desc p, .bloqizq #desc p {
+  font-family: "neutralight";
+  font-size: 1rem;
+  color: black;
+}
+
+.bloqizq .descizq {
+  text-align: end;
+  margin-right: 2vw;
+}
