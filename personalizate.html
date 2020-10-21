@@ -6,7 +6,6 @@
     <meta name="description" content="Diseño y armado de muebles a medida>
     <meta name="keywords" content="muebles a medida, muebles, escritorio, muebles personalizado, sillones, muebles para tv, rack tv, repisas de madera, estantes,  muebles rosario">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/main-orig.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"/>
     <title>GW - Personalizate</title>
 </head>
@@ -57,22 +56,22 @@
                 <img src="images/openmenu.png" class="containeren" onclick="openNav()" width="120px">
             </span>
     </header>
-    <section class="pers">
+    <section class="person">
         <section>
-            <div>
-                <form method="POST" action="enviar.php" enctype="multipart/form-data" class="form-pers">
+            <div class="cont__person">
+                <form method="POST" action="enviar.php" enctype="multipart/form-data" class="person__form">
                     <legend>Comentanos que te gustaria</legend>
-                    <input type="text" name="nombre" placeholder="Nombre" class="barra"> 
-                    <input type="email" name="email" placeholder="E-mail" required class="barra">
-                    <textarea type="text" name="mensaje" placeholder="Detallanos" id="" cols="40" rows="10" required class="barra"></textarea> 
-                    <div class="ultimate-btn">                   
+                    <input type="text" name="nombre" placeholder="Nombre" class="form__barra"> 
+                    <input type="email" name="email" placeholder="E-mail" required class="form__barra">
+                    <textarea type="text" name="mensaje" placeholder="Detallanos" id="" cols="40" rows="10" required class="form__barra"></textarea> 
+                    <div class="form__ultimate__btn">                   
                         <input type="file" name="foto" id="foto" multiple>
                         <input type="submit" value="Enviar"  class="button">       
                     </div>
                 </form>
             </div>
-        </section>    
-        <aside class="ejemplos">
+        </section>   
+        <aside class="person__ejemple">
             <h3>Algunos Trabajos</h3>
             <ul>
                 <li><a href="nuestros-proyectos.html" ><img src="images/pers1.jpg" width="240" height="120"></a></li>
@@ -81,6 +80,7 @@
             </ul>
         </aside>
     </section>
+    <a href="index.html"><img src="images/GWd.png" height="150px" class="go__inicio__person__contact" alt=""></a> 
     <footer id="footer">
         <div class="bigfooter">
             <div class="footer-left">

@@ -1,0 +1,81 @@
+#gw__contact{
+    @include flex-position (flex,row,space-evenly,center);
+    height: 100vh;
+    .contact__cont_form{
+        background-color: $color-principal;
+        color: $color-secundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 22vw;
+        padding:0 1vw;        
+        .contact__form{
+            display: flex;
+            flex-direction: column;
+            legend{
+                margin-top: 1.5vh;
+                font-family: $fuente-titulo;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .form__barra{
+                font-family: $fuente-extra;
+                border: none;
+                border-bottom: 2.5px solid $color-secundario;
+                background: transparent;
+                color: white;
+                padding-top:1rem ;}
+            textarea{
+                resize: none;}
+            input:focus, textarea:focus{
+                font-family: $fuente-extra;
+                outline:none;
+                color: $color-terciario;
+                size: 30vw;}
+            #inp-cont:focus{
+                background-color: $color-principal;
+                font-family: $fuente-extra;
+                outline:none;
+                color: $color-terciario;}
+            .form__newsletter{
+                @include flex-position(flex,row,space-around,center);
+                font-family:$fuente-media;
+                font-size: 0.85rem;
+                margin:2.5vh 0 1vh 0;}
+            .contact__form__btn{
+                border: none;
+                background-color: $color-secundario;
+                color: $color-principal;
+                font-family: $fuente-titulo;
+                padding: 1vh 0 0.8vh 0;
+                margin: 3vh 3vw 2vh 3vw;
+                font-size: 1rem;
+                cursor: pointer;}
+        }
+    }
+    .contact__find{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 24vw;
+        height: 71.5vh;
+        background-color: $color-principal;
+        padding: 1vh 1vw 3vh 1vw;
+        color: white;
+
+        h3{
+            font-family: $fuente-titulo;
+            color: $color-secundario;
+            font-size: 1.5rem;
+            padding-bottom: 5.5rem;
+            text-align: center;}
+        h4{
+            font-family: $fuente-media;
+            font-size: 1rem;
+            padding-bottom: 1rem;}
+        p{
+            font-family: $fuente-extra;
+            font-size: 0.9rem;
+        }
+    }
+}

@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 
-.bloque-slider, .dream, .sidenav .gran-menu .redes {
+.project__descrip .descrip__text, .project__wood .wood__text, .project__wood, .gran-project .project-rack, .project__title__text, .bloque-slider, .dream, .sidenav .gran-menu .redes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.bloqder, .bloqizq, .sidenav .gran-menu .lista {
+.project__descrip, .gran-project .w3-row-padding, .gran-project .project-living, .bloqder, .bloqizq, .sidenav .gran-menu .lista {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -543,4 +543,378 @@
 .bloqizq .descizq {
   text-align: end;
   margin-right: 2vw;
+}
+
+.project__title__img {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: -100;
+  width: 100vw;
+}
+.project__title__img img {
+  height: 50vh;
+}
+
+.project__title__text {
+  height: 100vh;
+}
+.project__title__text h3 {
+  font-family: "neutramed";
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-left: 45%;
+  background: #e0ff00;
+  padding: 0.2rem 1rem 0.05rem 1rem;
+  margin-bottom: -1rem;
+}
+.project__title__text h1 {
+  font-family: "neutrabold";
+  font-size: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.project__title__text .project__title__subt {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+}
+.project__title__text .project__title__subt h2 {
+  font-family: "neutramed";
+  font-size: 1.5rem;
+}
+.project__title__text .project__title__subt h2 .subt__text {
+  margin-left: 6%;
+}
+
+.gran-project .project-line-white {
+  position: absolute;
+  width: 0.6px;
+  height: 260vh;
+  background-color: #ffffff83;
+  left: 50%;
+}
+.gran-project .project-living {
+  height: 100vh;
+  background-color: black;
+}
+.gran-project .project-living img {
+  z-index: 2;
+  height: 70%;
+  margin-top: 5%;
+}
+.gran-project .project-rack {
+  background-color: black;
+  height: 60vh;
+  z-index: 2;
+  padding: 0 10%;
+  text-align: center;
+  color: white;
+  font-family: "neutrabook";
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+.gran-project .project-rack .project__rack__title {
+  color: #e0ff00;
+  margin-top: 3.5%;
+  font-family: "neutrabold";
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  z-index: 2;
+  font-size: 3rem;
+}
+.gran-project .w3-row-padding {
+  background: black;
+  height: 100vh;
+}
+.gran-project .w3-row-padding .w3-container {
+  z-index: 2;
+}
+.gran-project .w3-row-padding .w3-container .w3-hover-opacity {
+  z-index: 2;
+}
+
+.project__wood .project__2 {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.project__wood .project__2 h2 {
+  font-family: "neutrabold";
+  font-size: 6.5rem;
+  margin: -1rem 0;
+}
+.project__wood img {
+  height: 80vh;
+  width: 100vw;
+  padding-top: 10vh;
+  z-index: 2;
+}
+.project__wood .wood__text {
+  text-align: center;
+  margin: 0 10%;
+  height: 60vh;
+}
+.project__wood .wood__text h3 {
+  font-size: 3rem;
+  font-family: "neutrabold";
+}
+.project__wood .wood__text p {
+  font-size: 2rem;
+  font-family: "neutrabook";
+}
+.project__wood .wood__types {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
+}
+.project__wood .wood__types img {
+  height: 85%;
+  width: 18%;
+}
+
+.project__descrip {
+  height: 100vh;
+}
+.project__descrip .descrip__text {
+  height: 80vh;
+  width: 50vw;
+  padding: 0 2.5vw;
+}
+.project__descrip .descrip__img {
+  width: 50vw;
+  height: 80vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../images/rack-3.jpg);
+}
+.project__descrip .descrip__img2 {
+  width: 50vw;
+  height: 80vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../images/rack-4.jpg);
+  background-position: bottom;
+}
+
+.cont__supergallery {
+  background: #e0ff00;
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding-top: 0 1.5rem;
+}
+.cont__supergallery .image__gallery {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-flow: dense;
+  padding: 5rem;
+}
+.cont__supergallery .image__gallery img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+.cont__supergallery .image__gallery .img:nth-child(12) {
+  grid-column-start: span 2;
+}
+.cont__supergallery .image__gallery .img:nth-child(4) {
+  grid-column-start: span 2;
+}
+.cont__supergallery .image__gallery .img:nth-child(5) {
+  grid-column-start: span 2;
+}
+.cont__supergallery .image__gallery .img:nth-child(14) {
+  grid-column-start: span 4;
+}
+
+.person {
+  background-color: white;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.person .person__form {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 71vh;
+  width: 22vw;
+  overflow: auto;
+  padding: 3vh 1vw;
+}
+.person .person__form legend {
+  font-family: "neutramed";
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: #e0ff00;
+}
+.person .person__form .form__barra {
+  font-family: "neutrabook";
+  border: none;
+  border-bottom: 2.5px solid #e0ff00;
+  background: transparent;
+  color: white;
+}
+.person .person__form textarea {
+  resize: none;
+}
+.person .person__form input:focus, .person .person__form textarea:focus {
+  font-family: "neutrabold";
+  outline: none;
+  color: white;
+  size: 30vw;
+}
+.person .person__form .form__ultimate__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.person .person__form .form__ultimate__btn #foto {
+  color: White;
+}
+.person .person__form .form__ultimate__btn .button {
+  border: none;
+  margin-top: 4vh;
+  background-color: #e0ff00;
+  color: black;
+  padding: 1vh 4vw;
+  font-family: "neutrabold";
+  font-size: 1rem;
+  cursor: pointer;
+}
+.person .person__ejemple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22vw;
+  background-color: black;
+  color: #e0ff00;
+  padding: 3vh 1vw;
+}
+.person .person__ejemple h3 {
+  font-family: "neutramed";
+  font-size: 1.5rem;
+  padding-bottom: 2vh;
+}
+.person .person__ejemple li {
+  list-style: none;
+}
+
+.go__inicio__person__contact {
+  background: white;
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  padding: 0.5rem;
+  z-index: 900;
+}
+
+#gw__contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+#gw__contact .contact__cont_form {
+  background-color: black;
+  color: #e0ff00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22vw;
+  padding: 0 1vw;
+}
+#gw__contact .contact__cont_form .contact__form {
+  display: flex;
+  flex-direction: column;
+}
+#gw__contact .contact__cont_form .contact__form legend {
+  margin-top: 1.5vh;
+  font-family: "neutrabold";
+  font-size: 1.5rem;
+  text-align: center;
+}
+#gw__contact .contact__cont_form .contact__form .form__barra {
+  font-family: "neutrabook";
+  border: none;
+  border-bottom: 2.5px solid #e0ff00;
+  background: transparent;
+  color: white;
+  padding-top: 1rem;
+}
+#gw__contact .contact__cont_form .contact__form textarea {
+  resize: none;
+}
+#gw__contact .contact__cont_form .contact__form input:focus, #gw__contact .contact__cont_form .contact__form textarea:focus {
+  font-family: "neutrabook";
+  outline: none;
+  color: white;
+  size: 30vw;
+}
+#gw__contact .contact__cont_form .contact__form #inp-cont:focus {
+  background-color: black;
+  font-family: "neutrabook";
+  outline: none;
+  color: white;
+}
+#gw__contact .contact__cont_form .contact__form .form__newsletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "neutramed";
+  font-size: 0.85rem;
+  margin: 2.5vh 0 1vh 0;
+}
+#gw__contact .contact__cont_form .contact__form .contact__form__btn {
+  border: none;
+  background-color: #e0ff00;
+  color: black;
+  font-family: "neutrabold";
+  padding: 1vh 0 0.8vh 0;
+  margin: 3vh 3vw 2vh 3vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#gw__contact .contact__find {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24vw;
+  height: 71.5vh;
+  background-color: black;
+  padding: 1vh 1vw 3vh 1vw;
+  color: white;
+}
+#gw__contact .contact__find h3 {
+  font-family: "neutrabold";
+  color: #e0ff00;
+  font-size: 1.5rem;
+  padding-bottom: 5.5rem;
+  text-align: center;
+}
+#gw__contact .contact__find h4 {
+  font-family: "neutramed";
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+#gw__contact .contact__find p {
+  font-family: "neutrabook";
+  font-size: 0.9rem;
 }

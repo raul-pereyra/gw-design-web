@@ -1,0 +1,78 @@
+.person{
+    background-color:$color-terciario;
+    height: 100vh;
+    background-position: center center;
+    background-size:cover;
+    @include flex-position(flex,row,space-evenly,center);
+    .person__form{
+        background-color: $color-principal;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        height: 71vh;
+        width: 22vw;
+        overflow: auto;
+        padding: 3vh 1vw;
+        legend{
+            font-family: $fuente-media;
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+            color: $color-secundario;}
+        .form__barra{
+            font-family: $fuente-extra;
+            border: none;
+            border-bottom: 2.5px solid $color-secundario;
+            background: transparent;
+            color: white;}
+        textarea{
+            resize: none;}
+        input:focus, textarea:focus{
+            font-family: $fuente-titulo;
+            outline:none;
+            color: $color-terciario;
+            size: 30vw;}
+        .form__ultimate__btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #foto{
+                color: White;}
+
+            .button{
+                border: none;
+                margin-top: 4vh;
+                background-color: $color-secundario;
+                color: $color-principal;
+                padding: 1vh 4vw;
+                font-family: $fuente-titulo;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .person__ejemple{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 22vw;
+        background-color: $color-principal;
+        color: $color-secundario;
+        padding: 3vh 1vw;
+        h3{
+            font-family: $fuente-media;
+            font-size: 1.5rem;
+            padding-bottom: 2vh;}
+        li{
+            list-style: none;
+        }
+}
+}
+.go__inicio__person__contact{
+    background: white;
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.5rem;
+    z-index: 900;
+}
