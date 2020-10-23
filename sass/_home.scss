@@ -185,3 +185,44 @@
         padding-bottom: 5%;
     }
 }
+ 
+@media screen and (max-width: 767px){
+    .line-mid{
+        display: none;}
+    .design{
+        background: url(../images/great-fondo.gif);
+        background-size: cover;
+        background-position: center center;
+        @include flex-position(flex,column,center,center);
+        top:0;
+        padding-bottom: 20vh;
+        height: 50vh;  
+        width: 100%;  
+        z-index: -1;
+        
+        h1{
+            z-index: 1;
+            width: 100vw;
+            text-align:center;
+            margin-top: 37vh;
+            font-size: 3    vh;
+            font-family: $fuente-titulo;
+            color: $color-principal;}
+        .line-design{
+            z-index: 1;
+            @include flex-position (flex,column,center,center);
+            width:100%;
+            margin-top: -1rem;
+        
+        .linegros{
+            display:none}
+        .descri{
+            margin-left: -1.2rem;
+            font-size: 5vh;
+            font-family: $fuente-media;
+            padding: 1.2rem 1.5rem 1.2rem 0.5rem;
+            letter-spacing: -0.1rem;
+            color:$color-principal;}
+            }
+    }
+}
