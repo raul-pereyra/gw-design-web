@@ -58,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding:2vh 0;}
+    padding:2vh 0 2vh 3vw;}
 .menu-compuesto .number{
     font-family: "neutrabook";
     font-size: 3vh;
@@ -210,15 +210,15 @@
 .design h1{
     z-index: 1;
     padding-top: 7vh;
-    font-size: 9vh;
+    font-size: 8vh;
     font-family: neutrabold;
     color: black;}
 .descri{
     margin-top:3.5rem;
     text-align: center;
-    font-size: 3.5vh;
+    font-size: 3.1vh;
     font-family: neutramed;
-    padding: 1.2rem 1.5rem 1.2rem 0.5rem;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
     letter-spacing: -0,1rem;
     color: #e0ff00;
     background-color: rgba(0, 0, 0, 0.5);}
@@ -271,7 +271,8 @@
     color:black;}
 .dream h2{
     font-family: neutrabold;
-    font-size: 4.5vh;}
+    font-size: 5vh;
+    text-align: center;}
 .idea{
     display:flex;   
     flex-direction: column;
@@ -465,4 +466,77 @@
 .image__gallery img{
     max-width: 95vw;
     height: 70vh;}
-/*////////////*/
+                    /*////// CONOCENOS //////*/
+.conocenos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.conocenos h1{
+    height: 20vh;
+    font-family: neutrabold;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    padding-top: 10vh;}
+.office{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+padding-bottom:10vh ;}
+.office1{
+    height: 143px;
+    width: 250px;
+    position: relative;
+    left:-15vw;
+    margin-top: 7vh;}
+.office_bloq{
+    display: none;}
+.office2{
+    height: 143px;
+    width: 200px;
+    position: relative;
+    left:20vw;
+    margin-top: -2vh;}
+.office3{
+    height: 143px;
+    width: 300px;
+    position: relative;
+    left: -6vw;}
+.img-conocenos{
+    width: 100vw;
+    order: 1;}
+.bloqder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.descder{
+    order: 2;
+    padding: 1.5vh 3vw 5vh 3vw;}
+#desc h2{
+    font-family: neutrabold;
+    font-size: 2rem;
+    text-transform: uppercase;}
+#desc h3{
+    background-color: black;
+    color: #e0ff00;
+    font-size: 1.1rem;
+    font-family: neutramed;
+    margin-bottom: 1vh;}
+
+    #desc p{
+    font-family: neutralight;
+    font-size: 1rem;
+    color: black;}
+.bloqizq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.descizq{
+    order: 2;
+    padding: 1.5vh 3vw 5vh 3vw;
+}
