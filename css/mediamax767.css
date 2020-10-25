@@ -617,3 +617,87 @@ input:focus, text:focus{
     height: 80%;}
 .go__inicio__person__contact{
     display: none;}
+                /*////// CONTACTO //////*/
+#gw__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.contact__cont_form{
+    margin-top: 2.8vh;
+    margin-bottom: 2.8vh;
+    background-color: black;
+    color: #e0ff00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    padding: 3vh 2.5vw;}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-around;}
+.contact__form legend{
+    font-family: neutrabold;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;}
+.form__barra{
+    font-family: neutrabook;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 3px solid #e0ff00;
+    background: transparent;
+    color: white;}
+.form__barra textarea{
+    resize: none;}
+.form__barra input:focus, textarea:focus{
+    font-family: neutrabook;
+    outline: none;
+    color: white;}
+#inp-cont:focus{
+    background-color: black;
+    color: #e0ff00;
+    outline: none;
+    font-family: neutrabook;
+    font-size: 1.2rem;}
+.form__newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: neutramed;
+    font-size: 1rem;}
+.contact__form__btn{
+    border: none;
+    background-color: #e0ff00;
+    color: black;
+    font-family: neutrabold;
+    padding: 1vh 0 0.8vh;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;}
+.contact__find{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90vw;
+    background-color: black;
+    padding: 3vh 2.5vw;
+    color: white;
+    margin-bottom: 3vh;}
+.contact__find h3{
+    font-family: neutrabold;
+    color:#e0ff00;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;}
+.contact__find h4{
+    font-family: neutramed;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;}
+.contact__find p{
+    font-family: neutrabook;
+    font-size: 1rem;}
+.contact__find iframe{
+    margin-top: 2rem;
+    width: 99%;}
