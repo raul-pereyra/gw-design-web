@@ -466,6 +466,55 @@
   padding-bottom: 5%;
 }
 
+@media screen and (max-width: 767px) {
+  .line-mid {
+    display: none;
+  }
+
+  .design {
+    background: url(../images/great-fondo.gif);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    padding-bottom: 20vh;
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+  }
+  .design h1 {
+    z-index: 1;
+    width: 100vw;
+    text-align: center;
+    margin-top: 37vh;
+    font-size: 3 vh;
+    font-family: "neutrabold";
+    color: black;
+  }
+  .design .line-design {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -1rem;
+  }
+  .design .line-design .linegros {
+    display: none;
+  }
+  .design .line-design .descri {
+    margin-left: -1.2rem;
+    font-size: 5vh;
+    font-family: "neutramed";
+    padding: 1.2rem 1.5rem 1.2rem 0.5rem;
+    letter-spacing: -0.1rem;
+    color: black;
+  }
+}
 .conocenos {
   display: flex;
   flex-direction: column;
@@ -686,6 +735,18 @@
   height: 80vh;
   width: 50vw;
   padding: 0 2.5vw;
+}
+.project__descrip .descrip__text .descrip__int__one {
+  margin-left: -17vw;
+}
+.project__descrip .descrip__text .descrip__int__two {
+  margin-left: -10vw;
+}
+.project__descrip .descrip__text .descrip__int__3 {
+  margin-left: -26vw;
+}
+.project__descrip .descrip__text .descrip__int__4 {
+  margin-left: -3vw;
 }
 .project__descrip .descrip__img {
   width: 50vw;

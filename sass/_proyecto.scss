@@ -138,7 +138,16 @@
         @extend %center-column;
         height: 80vh;
         width: 50vw;
-        padding:0 2.5vw;}
+        padding:0 2.5vw;
+        .descrip__int__one{
+            margin-left: -17vw;}
+        .descrip__int__two{
+            margin-left: -10vw;}
+        .descrip__int__3{
+            margin-left:-26vw;}
+        .descrip__int__4{
+            margin-left: -3vw;}
+        }
     .descrip__img{
         width: 50vw;
         height: 80vh;
